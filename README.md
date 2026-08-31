@@ -37,3 +37,10 @@ This work is published under [MIT][mit] License.
 [chirpy]: https://github.com/cotes2020/jekyll-theme-chirpy/
 [CD]: https://en.wikipedia.org/wiki/Continuous_deployment
 [mit]: https://github.com/cotes2020/chirpy-starter/blob/master/LICENSE
+
+## preview
+To launch preview on your own platform，command:
+"""
+bash cd /home/bluecat/xcb/chenboxin.github.io
+bundle exec jekyll serve
+“”“
