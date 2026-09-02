@@ -20,7 +20,7 @@ I am an undergraduate student majoring in **Intelligent Unmanned Systems** at th
 
 | 时间 | 学校 | 说明 |
 | --- | --- | --- |
-| 2024.8 – 至今 | 北京理工大学 | 本科，智能无人系统专业 |
+| 2024.8 – 至今 | [北京理工大学](https://www.bit.edu.cn/) | 本科，智能无人系统专业 |
 | 2021.9 – 2024.6 | 山西大学附属中学 | 高中 |
 
 ## News / 动态
