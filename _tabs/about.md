@@ -6,7 +6,7 @@ order: 1
 
 ## About / 简介
 
-I am an undergraduate student majoring in **Intelligent Unmanned Systems** at the **Beijing Institute of Technology (BIT)** (Class of 2028). My research focuses on **Embodied AI** and **LLM Reasoning**, in particular long-horizon decision making and data efficiency for robots.
+I am an undergraduate student majoring in **Intelligent Unmanned Systems** at the **Beijing Institute of Technology (BIT)** (Class of 2028). My research focuses on **Embodied AI** and **LLM Reasoning**. in particular reinforcement learning and data efficiency for robots.
 
 我是北京理工大学智能无人系统专业的本科生（2024 级）。研究方向为**具身智能**与**大模型推理**，聚焦具身智能的长时程决策与数据效率问题，融合强化学习（RL）、视觉-语言-动作模型（VLA）与世界模型（WAM），依托遥操作数据、第一人称人类数据与仿真平台开展"算法—仿真—真机"闭环研究。
 
@@ -36,4 +36,4 @@ I am an undergraduate student majoring in **Intelligent Unmanned Systems** at th
 ## Contact / 联系方式
 
 - **Email**: <xinchenbo@bit.edu.cn>
-- **GitHub**: [BlueDowntown](https://github.com/BlueDowntown)
+- **GitHub**: [Chenbo-Xin](https://github.com/Chenbo-Xin)
