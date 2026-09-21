@@ -25,9 +25,7 @@ I am an undergraduate student majoring in **Intelligent Unmanned Systems** at th
 
 ## News / 动态
 
-- **2026.05**: 北京市自然科学基金"启研计划"本科生专项立项，担任第一主持人。
 - **2025**: ICLR 2026 论文 [*Hierarchical Value-Decomposed Offline RL for Whole-Body Control*](https://openreview.net/pdf?id=eSkDNIGbcd){:target="_blank" rel="noopener"} 被接收。
-- **2025.07 – 2025.08**: 于南京南栖仙策（Polixir）完成机器学习工程师暑期实习。
 
 ## Honors / 荣誉
 
