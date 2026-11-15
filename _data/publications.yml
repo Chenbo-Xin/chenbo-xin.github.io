@@ -83,26 +83,58 @@
 - id: shore-rl
   group: review
   title: "SHORE-RL: Shortening Effective Horizons for Long-Horizon Residual Reinforcement Learning"
-  authors: ["J. Wang*", "C. Xin*", "Y. Mei", "et al.", "G. Wang"]
+  authors:
+    - "Jiaming Wang*"
+    - "Chenbo Xin*"
+    - "Yunpeng Mei*"
+    - "Hongjie Cao*"
+    - "Yuze Wang"
+    - "Boxuan Zhang"
+    - "Yihan Zhou"
+    - "Chenyu Wang"
+    - "Hailing Fu"
+    - "Gang Wang"
   venue: "IEEE Robotics and Automation Letters"
   status: "Under review"
   distinction: "Co-first author"
   affiliation: "BIT · ByteDance Seed"
+  image: /assets/image/papers/SHORE-RL.jpg
+  image_alt: "Overview of the SHORE-RL framework for whole-body control"
   authors_incomplete: true
 
 - id: mode-coverage
   group: review
   title: "Mode-Coverage Learnability of Data-Free Neural Samplers"
-  authors: ["Y. Mei*", "X. Zhu*", "B. Zhang*", "C. Xin", "et al.", "G. Wang"]
+  authors:
+    - "Yunpeng Mei*"
+    - "Xiaowen Zhu*"
+    - "Boxuan Zhang*"
+    - "Chenbo Xin*"
+    - "Yuze Wang"
+    - "Hongjie Cao"
+    - "Jiamin Wang"
+    - "Hailing Fu"
+    - "Gang Wang"
   venue: "AAAI 2027"
   status: "Under review"
   affiliation: "BIT"
+  image: /assets/image/papers/mode-coverage.jpg
+  image_alt: "Overview of the mode-coverage framework for whole-body control"
   authors_incomplete: true
 
 - id: egomirror
   group: review
   title: "EgoMirror: Generating Multi-View Robot Demonstrations from Egocentric Data"
-  authors: ["H. Fan*", "X. Wang*", "C. Xin", "et al.", "X. Li", "H. Dong"]
+  authors:
+    - "Hongwei Fan*"
+    - "Xinyu Wang*"
+    - "Chenbo Xin*"
+    - "Yuxuan Yao"
+    - "Chengwei Zhang"
+    - "Yuxing Long"
+    - "Jiafeng Xu"
+    - "Xiaoqi Li"
+    - "Hao Dong"
   venue: "CVPR 2027"
   status: "Under review"
   affiliation: "Peking University · PKU-Agibot Laboratory · USTC · BIT · Primebot"
@@ -111,7 +143,16 @@
 - id: incomplete-actions
   group: review
   title: "Learning from Incomplete Actions: Interval Motion Supervision for Vision-Language-Action Policies"
-  authors: ["Y. Mei*", "C. Wang", "X. Zhu", "C. Xin", "et al.", "Y. Wang", "G. Wang"]
+  authors:
+    - "Yunpeng Mei*"
+    - "Chenyu Wang*"
+    - "Xiaowen Zhu*"
+    - "Chenbo Xin*"
+    - "Hongjie Cao"
+    - "Yiyuan Li"
+    - "Chengye Zhang"
+    - "YuAn Wang"
+    - "Gang Wang"
   venue: "CVPR 2027"
   status: "Under review"
   affiliation: "BIT · ByteDance Seed"
@@ -152,12 +193,3 @@
       url: https://llm4robot.github.io/bench/
     - label: Code
       url: https://github.com/LLM4Robot/LLM4Robot-Bench
-
-- id: h2r-4dgen
-  group: preparation
-  title: "H2R-4DGen: From Pose-free Ego-Centric Human Data to 4D Robot Data Generation"
-  authors: ["H. Fan", "X. Wang", "C. Xin", "et al.", "H. Dong"]
-  venue: "CVPR 2027"
-  status: "In preparation"
-  affiliation: "Peking University · Agibot · PrimeBot"
-  authors_incomplete: true
