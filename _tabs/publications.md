@@ -4,6 +4,7 @@ title: Publications
 icon: fas fa-file-alt
 order: 2
 permalink: /publications/
+show_preparation: true
 ---
 
 <div class="shell publication-page">

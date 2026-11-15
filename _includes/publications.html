@@ -8,6 +8,8 @@
   {% for paper in review %}{% include paper-card.html paper=paper %}{% endfor %}
 
   {% assign preparation = site.data.publications | where: 'group', 'preparation' %}
-  <div class="paper-group-heading"><h3>In preparation <span>/ 撰写中</span></h3><span>{{ preparation.size }} PAPER{% if preparation.size != 1 %}S{% endif %}</span></div>
-  {% for paper in preparation %}{% include paper-card.html paper=paper %}{% endfor %}
+  {% if page.show_preparation and preparation.size > 0 %}
+    <div class="paper-group-heading"><h3>In preparation <span>/ 撰写中</span></h3><span>{{ preparation.size }} PAPER{% if preparation.size != 1 %}S{% endif %}</span></div>
+    {% for paper in preparation %}{% include paper-card.html paper=paper %}{% endfor %}
+  {% endif %}
 </div>

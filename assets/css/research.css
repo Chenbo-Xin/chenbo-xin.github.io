@@ -99,8 +99,7 @@ a:focus-visible { outline: 3px solid #76ad9d; outline-offset: 4px; border-radius
 .paper-title { margin: 0 0 6px; color: #203c34; font-size: 15px; font-weight: 750; line-height: 1.5; letter-spacing: -.01em; }
 .paper-authors { margin: 0 0 4px; color: #52645e; font-size: 12px; line-height: 1.75; }
 .paper-authors strong { color: #173d32; font-weight: 800; text-decoration: underline; text-decoration-color: #a5c9b5; text-underline-offset: 3px; }
-.paper-note, .paper-affiliation { margin: 2px 0 0; color: #8a9c93; font-size: 11px; line-height: 1.55; }
-.paper-note { font-style: italic; }
+.paper-affiliation { margin: 2px 0 0; color: #8a9c93; font-size: 11px; line-height: 1.55; }
 .paper-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
 .paper-links a { padding: 3px 8px; border: 1px solid #c9ded2; border-radius: 4px; color: #3c7665; font-size: 10px; font-weight: 750; line-height: 1.4; text-decoration: none; }
 .paper-links a:hover { background: #eaf3ed; }
@@ -172,7 +171,7 @@ a:focus-visible { outline: 3px solid #76ad9d; outline-offset: 4px; border-radius
   .placeholder-icon { width: 21px; height: 21px; }
   .paper-title { font-size: 13px; }
   .paper-authors { font-size: 11px; }
-  .paper-affiliation, .paper-note { font-size: 10px; }
+  .paper-affiliation { font-size: 10px; }
   .recognition-grid { grid-template-columns: 1fr; gap: 32px; }
   .contact-band { display: block; margin: 45px 0; padding: 26px; }
   .contact-band > a { display: inline-block; margin-top: 18px; }

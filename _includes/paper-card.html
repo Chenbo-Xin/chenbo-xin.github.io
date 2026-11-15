@@ -18,7 +18,6 @@
       {% if include.paper.status %}<span class="paper-status">{{ include.paper.status | escape }}</span>{% endif %}
       {% if include.paper.distinction %}<span class="paper-distinction">{{ include.paper.distinction | escape }}</span>{% endif %}
     </div>
-    {% if include.paper.authors_incomplete %}<p class="paper-note">Full author list to be updated</p>{% endif %}
     {% if include.paper.affiliation %}<p class="paper-affiliation">{{ include.paper.affiliation | escape }}</p>{% endif %}
     {% if include.paper.links %}
       <div class="paper-links" aria-label="Paper links">
