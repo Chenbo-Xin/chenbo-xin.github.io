@@ -1,0 +1,13 @@
+<div class="publication-list">
+  {% assign published = site.data.publications | where: 'group', 'published' %}
+  <div class="paper-group-heading"><h3>Published <span>/ 已发表</span></h3><span>{{ published.size }} PAPERS</span></div>
+  {% for paper in published %}{% include paper-card.html paper=paper %}{% endfor %}
+
+  {% assign review = site.data.publications | where: 'group', 'review' %}
+  <div class="paper-group-heading"><h3>Under review <span>/ 在审</span></h3><span>{{ review.size }} PAPERS</span></div>
+  {% for paper in review %}{% include paper-card.html paper=paper %}{% endfor %}
+
+  {% assign preparation = site.data.publications | where: 'group', 'preparation' %}
+  <div class="paper-group-heading"><h3>In preparation <span>/ 撰写中</span></h3><span>{{ preparation.size }} PAPER{% if preparation.size != 1 %}S{% endif %}</span></div>
+  {% for paper in preparation %}{% include paper-card.html paper=paper %}{% endfor %}
+</div>

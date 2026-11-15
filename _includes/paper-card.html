@@ -1,0 +1,29 @@
+<article class="paper" id="{{ include.paper.id | escape }}">
+  <div class="paper-visual{% unless include.paper.image %} paper-visual--pending{% endunless %}">
+    {% if include.paper.image %}
+      <img src="{{ include.paper.image | relative_url }}" alt="{{ include.paper.image_alt | escape }}" loading="lazy">
+    {% else %}
+      <span class="paper-placeholder" aria-label="Figure forthcoming"><span class="placeholder-icon" aria-hidden="true">↗</span><span>Figure<br>forthcoming</span></span>
+    {% endif %}
+  </div>
+  <div class="paper-body">
+    <h3 class="paper-title">{{ include.paper.title | escape }}</h3>
+    <p class="paper-authors">
+      {% for author in include.paper.authors %}
+        {% if author contains 'Chenbo Xin' or author contains 'C. Xin' %}<strong>{{ author | escape }}</strong>{% else %}{{ author | escape }}{% endif %}{% unless forloop.last %}, {% endunless %}
+      {% endfor %}
+    </p>
+    <div class="paper-badges">
+      <span class="venue">{{ include.paper.venue | escape }}</span>
+      {% if include.paper.status %}<span class="paper-status">{{ include.paper.status | escape }}</span>{% endif %}
+      {% if include.paper.distinction %}<span class="paper-distinction">{{ include.paper.distinction | escape }}</span>{% endif %}
+    </div>
+    {% if include.paper.authors_incomplete %}<p class="paper-note">Full author list to be updated</p>{% endif %}
+    {% if include.paper.affiliation %}<p class="paper-affiliation">{{ include.paper.affiliation | escape }}</p>{% endif %}
+    {% if include.paper.links %}
+      <div class="paper-links" aria-label="Paper links">
+        {% for link in include.paper.links %}<a href="{{ link.url | escape }}" target="_blank" rel="noopener noreferrer">{{ link.label | escape }} <span aria-hidden="true">↗</span></a>{% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</article>

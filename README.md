@@ -1,46 +1,26 @@
-# Chirpy Starter
+# Chenbo Xin · Research homepage
 
-[![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp;
-[![GitHub license](https://img.shields.io/github/license/cotes2020/chirpy-starter.svg?color=blue)][mit]
+This site uses Jekyll and the existing GitHub Pages workflow. The homepage and `/publications/` share the same publication data.
 
-A minimal, ready-to-use template for creating a blog with the [**Chirpy**][chirpy] Jekyll theme. Get up and running in minutes with all critical files pre-configured.
+## Local preview
 
-## Why This Starter Exists
+Install Ruby and Bundler, then run:
 
-When installing Chirpy through [RubyGems.org][gem], Jekyll can only read a subset of theme files (`_data`, `_layouts`, `_includes`, `_sass`, `assets`) and limited `_config.yml` options from the gem. As a result, users cannot enjoy the full out-of-the-box experience that Chirpy offers.
-
-To unlock all features, the following files must be present in your Jekyll site:
-
-```shell
-.
-├── _config.yml
-├── _plugins
-├── _tabs
-└── index.html
+```sh
+bundle install
+bundle exec jekyll serve
 ```
 
-This starter bundles those files from the latest **Chirpy** release along with a [CD][CD] workflow, so you can start writing immediately.
+Open the local address printed by Jekyll. Changes pushed to the configured GitHub Pages branch are built and deployed by `.github/workflows/pages-deploy.yml`.
 
-## Usage
+## Updating content
 
-Check out the [theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy/wiki).
+- Edit `_data/publications.yml` to add or update a paper. Use `group: published`, `review`, or `preparation` to choose its section. List authors in order, with `*` after names for equal contributions; the templates highlight `Chenbo Xin` or `C. Xin` automatically.
+- Add a paper image under `assets/image/papers/` and set its `image` and descriptive `image_alt`. When an image is not available, the page displays a neutral placeholder. Remove `authors_incomplete: true` when the full list has been added.
+- Edit `index.html` for the profile, news, honors, patents, and contact details. Layout and styling are in `_layouts/research.html` and `assets/css/research.css`.
 
-## Contributing
+## Publication image sources
 
-This repository is automatically updated with new releases from the theme repository. If you encounter any issues or want to contribute to its improvement, please visit the [theme repository][chirpy] to provide feedback.
+The paper thumbnails are cropped from figures in the papers: figure 2 of [Velocity Ambiguity Profiles](https://arxiv.org/abs/2610.30107), figure 1 of the [ForesightFlow preprint](https://arxiv.org/abs/2606.04968), figure 2 of the [ICLR proceedings version of HVD](https://proceedings.iclr.cc/paper_files/paper/2026/hash/86dbb21b9fd447c6e289563d67c44760-Abstract-Conference.html), and figure 1 of [LLM4Robot-Bench](https://arxiv.org/abs/2610.34527). The ForesightFlow preprint uses a different title from the accepted paper.
 
-## License
-
-This work is published under [MIT][mit] License.
-
-[gem]: https://rubygems.org/gems/jekyll-theme-chirpy
-[chirpy]: https://github.com/cotes2020/jekyll-theme-chirpy/
-[CD]: https://en.wikipedia.org/wiki/Continuous_deployment
-[mit]: https://github.com/cotes2020/chirpy-starter/blob/master/LICENSE
-
-## preview
-To launch preview on your own platform，command:
-"""
-bash cd /home/bluecat/xcb/chenboxin.github.io
-bundle exec jekyll serve
-“”“
+The repository retains the original Chirpy starter dependencies and MIT license.

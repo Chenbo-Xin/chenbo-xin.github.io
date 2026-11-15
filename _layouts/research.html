@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Chenbo Xin's research homepage: embodied AI, robotics, and language model reasoning.">
+    <title>{% if page.title %}{{ page.title | escape }} | {% endif %}Chenbo Xin</title>
+    <link rel="icon" type="image/png" href="{{ '/assets/img/favicons/favicon-32x32.png' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/research.css' | relative_url }}">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <div class="header-inner shell">
+        <a class="brand" href="{{ '/' | relative_url }}" aria-label="Chenbo Xin, home"><span class="brand-mark">CX<span>.</span></span><span class="brand-name">Chenbo Xin</span></a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="{{ '/' | relative_url }}#about">About</a>
+          <a href="{{ '/' | relative_url }}#news">News</a>
+          <a href="{{ '/' | relative_url }}#publications">Publications</a>
+          <a href="{{ '/' | relative_url }}#honors">Honors</a>
+          <a class="nav-contact" href="mailto:xinchenbo@bit.edu.cn">Contact <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+    <main id="main-content">{{ content }}</main>
+    <footer class="site-footer shell">
+      <div><strong>Chenbo Xin</strong><span>辛晨博 · 北京理工大学</span></div>
+      <p>© {{ 'now' | date: '%Y' }} Chenbo Xin <span aria-hidden="true">·</span> Made for curiosity and research.</p>
+    </footer>
+  </body>
+</html>

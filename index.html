@@ -1,58 +1,67 @@
 ---
-layout: home
-# Index page
-home_intro:
-  name: 辛晨博 / Chenbo Xin
-  role: 智能无人系统 2024级本科生
-  subtitle: AI & Robotics
-  interests:
-    - Embodied AI
-    - LLM Reasoning
-
-  links:
-    - label: 论文 / Publications
-      url: /publications/
+layout: research
 ---
 
-<div class="content">
+<div class="shell">
+  <section class="hero" id="about" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <div class="eyebrow"><span class="eyebrow-line"></span> HELLO, I'M</div>
+      <h1 id="hero-title">Chenbo Xin <span>辛晨博</span></h1>
+      <p class="hero-role">Undergraduate researcher <span>·</span> Beijing Institute of Technology</p>
+      <p class="hero-bio">I am an undergraduate student in Intelligent Unmanned Systems (AI &amp; Robotics) at Beijing Institute of Technology, class of 2028. My research interests lie in <strong>embodied AI</strong> and <strong>LLM reasoning</strong>.</p>
+      <p class="hero-bio hero-bio-cn" lang="zh-CN">我是北京理工大学智能无人系统专业本科生（2024 级），研究方向为具身智能与大模型推理。</p>
+      <div class="interest-list" aria-label="Research interests"><span>Embodied AI</span><span>LLM Reasoning</span><span>Robotics</span></div>
+      <div class="hero-actions">
+        <a class="button button-primary" href="mailto:xinchenbo@bit.edu.cn">Get in touch <span aria-hidden="true">↗</span></a>
+        <a class="button button-text" href="https://github.com/Chenbo-Xin" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        <a class="button button-text" href="{{ '/publications/' | relative_url }}">All publications <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+    <div class="portrait-wrap">
+      <div class="portrait-frame"><img src="{{ '/assets/image/person.png' | relative_url }}" alt="Chenbo Xin" fetchpriority="high"></div>
+      <p class="portrait-caption"><span>BEIJING, CHINA</span><span>AI &amp; ROBOTICS</span></p>
+    </div>
+  </section>
 
-  <h2 id="about--简介">About / 简介</h2>
+  <section class="section news-section" id="news" aria-labelledby="news-heading">
+    <div class="section-heading">
+      <div><p class="section-kicker">WHAT'S NEW</p><h2 id="news-heading">News <span>/ 动态</span></h2></div>
+      <p>Updates from my research &amp; journey.</p>
+    </div>
+    <div class="news-list">
+      <div class="news-item"><time datetime="2026-09">2026.09</time><p>Two papers, <a href="https://openreview.net/forum?id=ZHqszixmfx" target="_blank" rel="noopener noreferrer">ForesightFlow</a> and <a href="https://openreview.net/forum?id=hU5qsz0CsX" target="_blank" rel="noopener noreferrer">Velocity Ambiguity Profiles</a> (co-first author), were accepted to <strong>NeurIPS 2026</strong>.</p><span class="news-tag">PAPERS</span></div>
+      <div class="news-item"><time datetime="2026-07">2026.07</time><p lang="zh-CN">担任北京市自然科学基金“启研计划”本科生项目第一主持人。</p><span class="news-tag">RESEARCH</span></div>
+      <div class="news-item"><time datetime="2026-01">2026.01</time><p><a href="https://proceedings.iclr.cc/paper_files/paper/2026/hash/86dbb21b9fd447c6e289563d67c44760-Abstract-Conference.html" target="_blank" rel="noopener noreferrer">Hierarchical Value-Decomposed Offline RL for Whole-Body Control</a> was accepted to <strong>ICLR 2026</strong>.</p><span class="news-tag">PAPER</span></div>
+      <div class="news-item"><time datetime="2025-07">2025.07 – 08</time><p lang="zh-CN">于南京南栖仙策（Polixir）完成机器学习工程师暑期实习。</p><span class="news-tag">EXPERIENCE</span></div>
+    </div>
+  </section>
 
-  <p>
-    I am an undergraduate student majoring in <strong>Intelligent Unmanned Systems (AI & Robotics)</strong> at the
-    <strong>Beijing Institute of Technology (BIT)</strong> (Class of 2028). My research focuses on
-    <strong>Embodied AI</strong> and <strong>LLM Reasoning</strong>.
-  </p>
-  <p>
-    我是北京理工大学智能无人系统专业的本科生（2024 级），研究方向为<strong>具身智能（Embodied AI）</strong>与<strong>大模型推理（LLM Reasoning）</strong>。
-  </p>
+  <section class="section publications-section" id="publications" aria-labelledby="publications-heading">
+    <div class="section-heading">
+      <div><p class="section-kicker">RESEARCH &amp; IDEAS</p><h2 id="publications-heading">Publications <span>/ 论文</span></h2></div>
+      <a class="section-link" href="{{ '/publications/' | relative_url }}">Publication page <span aria-hidden="true">↗</span></a>
+    </div>
+    <p class="section-intro">A selection of my work in robotics and machine learning. <span>* Equal contribution.</span></p>
+    {% include publications.html %}
+  </section>
 
-  <h2 id="research-interests--研究方向">Research Interests / 研究方向</h2>
+  <section class="section recognition-section" id="honors" aria-labelledby="honors-heading">
+    <div class="section-heading"><div><p class="section-kicker">A FEW MILESTONES</p><h2 id="honors-heading">Honors &amp; patents <span>/ 荣誉与专利</span></h2></div></div>
+    <div class="recognition-grid">
+      <div class="recognition-block">
+        <div class="recognition-label">HONORS <span>01</span></div>
+        <div class="recognition-item"><span class="recognition-year">2024 — 2025</span><h3 lang="zh-CN">本科生国家奖学金</h3><p>National Scholarship for Undergraduate Students</p></div>
+      </div>
+      <div class="recognition-block">
+        <div class="recognition-label">PATENTS <span>02</span></div>
+        <div class="recognition-item"><h3 lang="zh-CN">一种面向机器人动作生成的流匹配速度歧义诊断与时间采样方法</h3><p lang="zh-CN">王钢，<strong>辛晨博</strong>，梅云鹏，朱啸闻等 · 发明专利，第一发明人，已受理 · 北京理工大学</p></div>
+        <div class="recognition-item"><h3 lang="zh-CN">一种基于前提排序算法提升大模型推理能力的方法和系统</h3><p lang="zh-CN">刘奋荣，成凤祥，<strong>辛晨博</strong>，李昊轩 · 发明专利，已受理 · 清华大学，北京大学</p></div>
+      </div>
+    </div>
+  </section>
 
-  <ul>
-    <li><strong>Embodied AI</strong>（具身智能）</li>
-    <li><strong>LLM Reasoning</strong>（大模型推理）</li>
-  </ul>
-
-  <h2 id="news--动态">News / 动态</h2>
-
-  <ul>
-    <li><strong>2026.09</strong>: 2篇 NeurIPS 2026 论文 <a href="https://openreview.net/forum?id=ZHqszixmfx#discussion" target="_blank" rel="noopener"><em>ForesightFlow: Self-Guided Flow Matching for Improving Vision-Language-Action Models</em></a> 和 <a href="https://openreview.net/forum?id=hU5qsz0CsX#discussion" target="_blank" rel="noopener"><em>Velocity Ambiguity Profiles: Time-Resolved Bayes-Risk Diagnostics for Flow Matching (共同一作)</em></a> 被接收。</li>
-    <li><strong>2026.07</strong>: 北京市自然科学基金“启研计划”本科生项目，担任第一主持人。</li>
-    <li><strong>2026.01</strong>: 1篇 ICLR 2026 论文 <a href="https://openreview.net/pdf?id=eSkDNIGbcd" target="_blank" rel="noopener"><em>Hierarchical Value-Decomposed Offline RL for Whole-Body Control</em></a> 被接收。</li>
-    <li><strong>2025.07 – 2025.08</strong>: 于南京南栖仙策（Polixir）完成机器学习工程师暑期实习。</li>
-  </ul>
-
-  <h2 id="honors--荣誉">Honors / 荣誉</h2>
-
-  <ul>
-    <li>本科生国家奖学金（2024–2025 学年）</li>
-  </ul>
-
-  <h2 id="contact--联系方式">Contact / 联系方式</h2>
-
-  <ul>
-    <li><strong>Email</strong>: <a href="mailto:xinchenbo@bit.edu.cn">xinchenbo@bit.edu.cn</a></li>
-  </ul>
-
+  <section class="contact-band" aria-labelledby="contact-heading">
+    <div><p class="section-kicker">SAY HELLO</p><h2 id="contact-heading">Let's connect.</h2><p>Interested in research, robotics, or collaboration? Feel free to reach out.</p></div>
+    <a href="mailto:xinchenbo@bit.edu.cn">xinchenbo@bit.edu.cn <span aria-hidden="true">↗</span></a>
+  </section>
 </div>
