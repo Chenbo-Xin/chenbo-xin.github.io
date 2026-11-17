@@ -138,6 +138,8 @@
   venue: "CVPR 2027"
   status: "Under review"
   affiliation: "Peking University · PKU-Agibot Laboratory · USTC · BIT · Primebot"
+  image: /assets/image/papers/EgoMirror.jpg
+  image_alt: "Overview of the EgoMirror framework for whole-body control"
   authors_incomplete: true
 
 - id: incomplete-actions
@@ -156,6 +158,8 @@
   venue: "CVPR 2027"
   status: "Under review"
   affiliation: "BIT · ByteDance Seed"
+  image: /assets/image/papers/Incomplete_Actions.jpg
+  image_alt: "Overview of the Incomplete_Actions framework for whole-body control"
   authors_incomplete: true
 
 - id: llm4robot-bench
