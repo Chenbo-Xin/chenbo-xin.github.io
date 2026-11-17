@@ -122,26 +122,6 @@
   image_alt: "Overview of the mode-coverage framework for whole-body control"
   authors_incomplete: true
 
-- id: egomirror
-  group: review
-  title: "EgoMirror: Generating Multi-View Robot Demonstrations from Egocentric Data"
-  authors:
-    - "Hongwei Fan*"
-    - "Xinyu Wang*"
-    - "Chenbo Xin*"
-    - "Yuxuan Yao"
-    - "Chengwei Zhang"
-    - "Yuxing Long"
-    - "Jiafeng Xu"
-    - "Xiaoqi Li"
-    - "Hao Dong"
-  venue: "CVPR 2027"
-  status: "Under review"
-  affiliation: "Peking University · PKU-Agibot Laboratory · USTC · BIT · Primebot"
-  image: /assets/image/papers/EgoMirror.jpg
-  image_alt: "Overview of the EgoMirror framework for whole-body control"
-  authors_incomplete: true
-
 - id: incomplete-actions
   group: review
   title: "Learning from Incomplete Actions: Interval Motion Supervision for Vision-Language-Action Policies"
