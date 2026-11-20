@@ -80,7 +80,100 @@
     - label: Code
       url: https://github.com/LAMDA-RL/HVD
 
+- id: shore-rl
+  group: review
+  title: "SHORE-RL: Shortening Effective Horizons for Long-Horizon Residual Reinforcement Learning"
+  authors:
+    - "Jiaming Wang*"
+    - "Chenbo Xin*"
+    - "Yunpeng Mei*"
+    - "Hongjie Cao*"
+    - "Yuze Wang"
+    - "Boxuan Zhang"
+    - "Yihan Zhou"
+    - "Chenyu Wang"
+    - "Hailing Fu"
+    - "Gang Wang"
+  venue: "IEEE Robotics and Automation Letters"
+  status: "Under review"
+  distinction: "Co-first author"
+  affiliation: "BIT · ByteDance Seed"
+  image: /assets/image/papers/SHORE-RL.jpg
+  image_alt: "Overview of the SHORE-RL framework for whole-body control"
 
 
+- id: mode-coverage
+  group: review
+  title: "Mode-Coverage Learnability of Data-Free Neural Samplers"
+  authors:
+    - "Yunpeng Mei*"
+    - "Xiaowen Zhu*"
+    - "Boxuan Zhang*"
+    - "Chenbo Xin*"
+    - "Yuze Wang"
+    - "Hongjie Cao"
+    - "Jiamin Wang"
+    - "Hailing Fu"
+    - "Gang Wang"
+  venue: "AAAI 2027"
+  status: "Under review"
+  affiliation: "BIT"
+  image: /assets/image/papers/mode-coverage.jpg
+  image_alt: "Overview of the mode-coverage framework for whole-body control"
+
+- id: llm4robot-bench
+  group: review
+  title: "LLM4Robot-Bench: How Far Can GPT-6 Astra Go in Robotic Manipulation? A Hierarchical, Paired Sim-Real Benchmark"
+  authors:
+    - "Haibao Yu*"
+    - "Jiaqi Meng*"
+    - "Zijian Zhang*"
+    - "Bowen Jing"
+    - "Lei Yang"
+    - "Yue Hu"
+    - "Chenchen Ge"
+    - "Yiming Hou"
+    - "Chenbo Xin"
+    - "Dawen Ye"
+    - "Haifang Qin"
+    - "Jin Li"
+    - "Weitao Zhou"
+    - "Jianing Qiu"
+    - "Jiankai Sun"
+    - "Dandan Zhang"
+    - "Zaiqing Nie"
+    - "Ping Luo"
+    - "Ding Zhao"
+  venue: "CVPR 2027"
+  status: "Under review"
+  affiliation: "Tuojing Intelligence · HKU · CAS · NTU · University of Michigan · Southeast University · Sapient Intelligence · SimpleAI · MBZUAI · Stanford · Imperial College London · Tsinghua University · Carnegie Mellon University"
+  image: /assets/image/papers/llm4robot-bench.jpg
+  image_alt: "Overview of the LLM4Robot-Bench evaluation and task hierarchy"
+  links:
+    - label: Paper
+      url: https://arxiv.org/abs/2610.34527
+    - label: Project
+      url: https://llm4robot.github.io/bench/
+    - label: Code
+      url: https://github.com/LLM4Robot/LLM4Robot-Bench
+
+- id: incomplete-actions
+  group: review
+  title: "Learning from Incomplete Actions: Interval Motion Supervision for Vision-Language-Action Policies"
+  authors:
+    - "Yunpeng Mei*"
+    - "Chenyu Wang*"
+    - "Xiaowen Zhu*"
+    - "Chenbo Xin*"
+    - "Hongjie Cao"
+    - "Yiyuan Li"
+    - "Chengye Zhang"
+    - "YuAn Wang"
+    - "Gang Wang"
+  venue: "CVPR 2027"
+  status: "Under review"
+  affiliation: "BIT · ByteDance Seed"
+  image: /assets/image/papers/Incomplete_Actions.jpg
+  image_alt: "Overview of the Incomplete_Actions framework for whole-body control"
 
 
