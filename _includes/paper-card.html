@@ -8,15 +8,41 @@
   </div>
   <div class="paper-body">
     <h3 class="paper-title">{{ include.paper.title | escape }}</h3>
+    {% assign co_first_authors = include.paper.co_first_authors %}
+    {% assign distinction = include.paper.distinction %}
+    {% if co_first_authors and distinction == 'Co-first author' %}
+      {% assign distinction = nil %}
+    {% endif %}
     <p class="paper-authors">
       {% for author in include.paper.authors %}
-        {% if author contains 'Chenbo Xin' or author contains 'C. Xin' %}<strong>{{ author | escape }}</strong>{% else %}{{ author | escape }}{% endif %}{% unless forloop.last %}, {% endunless %}
+        {% assign author_name = author %}
+        {% assign author_mark = '' %}
+        {% if co_first_authors %}
+          {% assign last_character = author | slice: -1, 1 %}
+          {% if last_character == '*' %}
+            {% assign name_length = author.size | minus: 1 %}
+            {% assign author_name = author | slice: 0, name_length %}
+          {% endif %}
+          {% if co_first_authors contains author_name %}
+            {% assign author_mark = '*' %}
+          {% endif %}
+        {% endif %}
+        {% assign author_label = author_name | append: author_mark | escape %}
+        {% if author_name contains 'Chenbo Xin' or author_name contains 'C. Xin' -%}
+          {%- if author_mark == '*' and distinction == nil -%}
+            {%- assign distinction = 'Co-first author' -%}
+          {%- endif -%}
+          <strong>{{ author_label }}</strong>
+        {%- else -%}
+          {{ author_label }}
+        {%- endif -%}
+        {%- unless forloop.last %}, {% endunless %}
       {% endfor %}
     </p>
     <div class="paper-badges">
       <span class="venue">{{ include.paper.venue | escape }}</span>
       {% if include.paper.status %}<span class="paper-status">{{ include.paper.status | escape }}</span>{% endif %}
-      {% if include.paper.distinction %}<span class="paper-distinction">{{ include.paper.distinction | escape }}</span>{% endif %}
+      {% if distinction %}<span class="paper-distinction">{{ distinction | escape }}</span>{% endif %}
     </div>
     {% if include.paper.affiliation %}<p class="paper-affiliation">{{ include.paper.affiliation | escape }}</p>{% endif %}
     {% if include.paper.links %}

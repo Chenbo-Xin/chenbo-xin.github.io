@@ -15,7 +15,8 @@ Open the local address printed by Jekyll. Changes pushed to the configured GitHu
 
 ## Updating content
 
-- Edit `_data/publications.yml` to add or update a paper. Use `group: published`, `review`, or `preparation` to choose its section. List authors in order, with `*` after names for equal contributions; the templates highlight `Chenbo Xin` or `C. Xin` automatically.
+- Edit `_data/publications.yml` to add or update a paper. Use `group: published`, `review`, or `preparation` to choose its section.
+- List names in publication order under `authors`. Add the exact names of the co-first authors under `co_first_authors` to mark each with `*`. Use `co_first_authors: []` to clear all co-first author marks. Older entries without this field still display any existing suffixes. The template bolds `Chenbo Xin` or `C. Xin` and displays a co-first author badge when that name is included in the new list.
 - Add a paper image under `assets/image/papers/` and set its `image` and descriptive `image_alt`. When an image is not available, the page displays a neutral placeholder. Remove `authors_incomplete: true` when the full list has been added.
 - Edit `index.html` for the profile, news, honors, patents, and contact details. Layout and styling are in `_layouts/research.html` and `assets/css/research.css`.
 

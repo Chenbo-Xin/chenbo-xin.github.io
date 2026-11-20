@@ -1,17 +1,24 @@
+# Keep authors in publication order. List the exact names to mark with * in
+# co_first_authors, or use co_first_authors: [] when there are no shared first authors.
+
 - id: velocity-ambiguity
   group: published
   title: "Velocity Ambiguity Profiles: Time-Resolved Bayes-Risk Diagnostics for Flow Matching"
   authors:
-    - "Yunpeng Mei*"
-    - "Xiaowen Zhu*"
-    - "Chenyu Wang*"
-    - "Chenbo Xin*"
+    - "Yunpeng Mei"
+    - "Xiaowen Zhu"
+    - "Chenyu Wang"
+    - "Chenbo Xin"
     - "Hongjie Cao"
     - "Jiamin Wang"
     - "Jie Chen"
     - "Gang Wang"
+  co_first_authors:
+    - "Yunpeng Mei"
+    - "Xiaowen Zhu"
+    - "Chenyu Wang"
+    - "Chenbo Xin"
   venue: "NeurIPS 2026"
-  distinction: "Co-first author"
   affiliation: "Beijing Institute of Technology · ByteDance"
   image: /assets/image/papers/velocity-ambiguity.jpg
   image_alt: "Experimental results from Velocity Ambiguity Profiles"
@@ -25,10 +32,10 @@
   group: published
   title: "ForesightFlow: Self-Guided Flow Matching for Improving Vision-Language-Action Models"
   authors:
-    - "Yunpeng Mei*"
-    - "Jiakai He*"
-    - "Hongjie Cao*"
-    - "Chenyu Wang*"
+    - "Yunpeng Mei"
+    - "Jiakai He"
+    - "Hongjie Cao"
+    - "Chenyu Wang"
     - "Xiaowen Zhu"
     - "Yihan Zhou"
     - "Jiamin Wang"
@@ -40,6 +47,11 @@
     - "Gao Huang"
     - "Jie Chen"
     - "Gang Wang"
+  co_first_authors:
+    - "Yunpeng Mei"
+    - "Jiakai He"
+    - "Hongjie Cao"
+    - "Chenyu Wang"
   venue: "NeurIPS 2026"
   affiliation: "Beijing Institute of Technology · Tsinghua University · HKUST (Guangzhou)"
   image: /assets/image/papers/foresight-flow.jpg
@@ -54,10 +66,10 @@
   group: published
   title: "Hierarchical Value-Decomposed Offline Reinforcement Learning for Whole-Body Control"
   authors:
-    - "Zhilong Zhang*"
-    - "Yunpeng Mei*"
-    - "Xinghao Du*"
-    - "Hongjie Cao*"
+    - "Zhilong Zhang"
+    - "Yunpeng Mei"
+    - "Xinghao Du"
+    - "Hongjie Cao"
     - "Haonan Wang"
     - "Pengyuan Min"
     - "Chenyu Wang"
@@ -70,6 +82,11 @@
     - "Lei Yuan"
     - "Gang Wang"
     - "Yang Yu"
+  co_first_authors:
+    - "Zhilong Zhang"
+    - "Yunpeng Mei"
+    - "Xinghao Du"
+    - "Hongjie Cao"
   venue: "ICLR 2026"
   affiliation: "LAMDA, Nanjing University · Beijing Institute of Technology"
   image: /assets/image/papers/hvd.jpg
@@ -84,19 +101,21 @@
   group: review
   title: "SHORE-RL: Shortening Effective Horizons for Long-Horizon Residual Reinforcement Learning"
   authors:
-    - "Jiaming Wang*"
-    - "Chenbo Xin*"
-    - "Yunpeng Mei*"
-    - "Hongjie Cao*"
+    - "Jiaming Wang"
+    - "Chenbo Xin"
+    - "Yunpeng Mei"
+    - "Hongjie Cao"
     - "Yuze Wang"
     - "Boxuan Zhang"
     - "Yihan Zhou"
     - "Chenyu Wang"
     - "Hailing Fu"
     - "Gang Wang"
+  co_first_authors:
+    - "Jiaming Wang"
+    - "Chenbo Xin"
   venue: "IEEE Robotics and Automation Letters"
   status: "Under review"
-  distinction: "Co-first author"
   affiliation: "BIT · ByteDance Seed"
   image: /assets/image/papers/SHORE-RL.jpg
   image_alt: "Overview of the SHORE-RL framework for whole-body control"
@@ -106,15 +125,18 @@
   group: review
   title: "Mode-Coverage Learnability of Data-Free Neural Samplers"
   authors:
-    - "Yunpeng Mei*"
-    - "Xiaowen Zhu*"
-    - "Boxuan Zhang*"
-    - "Chenbo Xin*"
+    - "Yunpeng Mei"
+    - "Xiaowen Zhu"
+    - "Boxuan Zhang"
+    - "Chenbo Xin"
     - "Yuze Wang"
     - "Hongjie Cao"
     - "Jiamin Wang"
     - "Hailing Fu"
     - "Gang Wang"
+  co_first_authors:
+    - "Yunpeng Mei"
+    - "Xiaowen Zhu"
   venue: "AAAI 2027"
   status: "Under review"
   affiliation: "BIT"
@@ -125,9 +147,9 @@
   group: review
   title: "LLM4Robot-Bench: How Far Can GPT-6 Astra Go in Robotic Manipulation? A Hierarchical, Paired Sim-Real Benchmark"
   authors:
-    - "Haibao Yu*"
-    - "Jiaqi Meng*"
-    - "Zijian Zhang*"
+    - "Haibao Yu"
+    - "Jiaqi Meng"
+    - "Zijian Zhang"
     - "Bowen Jing"
     - "Lei Yang"
     - "Yue Hu"
@@ -144,6 +166,10 @@
     - "Zaiqing Nie"
     - "Ping Luo"
     - "Ding Zhao"
+  co_first_authors:
+    - "Haibao Yu"
+    - "Jiaqi Meng"
+    - "Zijian Zhang"
   venue: "CVPR 2027"
   status: "Under review"
   affiliation: "Tuojing Intelligence · HKU · CAS · NTU · University of Michigan · Southeast University · Sapient Intelligence · SimpleAI · MBZUAI · Stanford · Imperial College London · Tsinghua University · Carnegie Mellon University"
@@ -161,10 +187,10 @@
   group: review
   title: "Learning from Incomplete Actions: Interval Motion Supervision for Vision-Language-Action Policies"
   authors:
-    - "Yunpeng Mei*"
-    - "Chenyu Wang*"
-    - "Xiaowen Zhu*"
-    - "Chenbo Xin*"
+    - "Yunpeng Mei"
+    - "Chenyu Wang"
+    - "Xiaowen Zhu"
+    - "Chenbo Xin"
     - "Hongjie Cao"
     - "Yiyuan Li"
     - "Chengye Zhang"
